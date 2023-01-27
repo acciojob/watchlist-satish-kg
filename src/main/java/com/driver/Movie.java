@@ -1,4 +1,5 @@
 package com.driver;
+import java.lang.String;
 
 public class Movie {
 //    String name, int durationInMinutes, double imdbRating, no-args constructor, all-args constructor
