@@ -7,6 +7,15 @@ public class Movie {
     private double imdbRating;
     private Director director;
 
+
+    //    no suitable constructor found for Movie(java.lang.String,int,double)
+    public Movie(String name,Director director, int durationInMinutes, double imdbRating){
+        this.name = name;
+        this.director = director;
+        this.durationInMinutes = durationInMinutes;
+        this.imdbRating = imdbRating;
+    }
+
     public Director getDirector() {
         return director;
     }
@@ -42,12 +51,13 @@ public class Movie {
     public Movie(){
 
     }
+//    no suitable constructor found for Movie(java.lang.String,int,double)
 
-    public Movie(String name,Director director, int durationInMinutes, double imdbRating){
-        this.name = name;
-        this.director = director;
-        this.durationInMinutes = durationInMinutes;
-        this.imdbRating = imdbRating;
-    }
+//    public Movie(String name,Director director, int durationInMinutes, double imdbRating){
+//        this.name = name;
+//        this.director = director;
+//        this.durationInMinutes = durationInMinutes;
+//        this.imdbRating = imdbRating;
+//    }
 
 }
